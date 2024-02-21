@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storages API</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: rgb(223, 209, 193);
+        }
+
+        fieldset{
+            border: goldenrod solid 2px;
+            border-radius: 10px;
+            width: 20%;
+            margin: 50px auto;
+        }
+        legend{
+            background-color: black;
+            color: white;
+            padding: 5px;
+            border-radius: 13px;
+            font-family: Comic sans MS;
+            border: 3px solid goldenrod;
+        }
+        label{
+            display: block;
+            margin: 10px 0px;
+            font-family: Comic sans MS;
+        }
+        
+        input{
+            background-color: aliceblue;
+            text-align: center;
+            padding: 5px;
+            font-size: large;
+            border-start-start-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        input:hover{
+            background-color: rgb(217, 241, 241);
+        }
+        article{
+            margin-bottom: 10px;
+        }
+        button{
+            background-color: black;
+            color: whitesmoke;
+            border : 2px solid goldenrod;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 15px;
+            font-family: Comic sans MS;
+            display: block;
+            margin-bottom:  10px;
+            width: 250px;
+
+        }
+        button:hover{
+            background-color: whitesmoke;
+            color: black;
+        }
+       
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Storages API</legend>
+
+        <article>
+            <label>Email Id :</label>
+            <input type="email" id="StorageEmail">
+        </article>
+
+        <article>
+            <label>password :</label>
+            <input type="password" id="StoragePassword">
+        </article>
+
+        <article>
+           <button onclick="save()">Save</button>
+           <button onclick="read()">Read</button>
+           <button onclick="remove()">Remove</button>
+        </article>
+
+    </fieldset>
+    
+</body>
+
+<script>
+    function save() {
+         Obj={
+                "email":document.getElementById("StorageEmail").value,
+                "password":document.getElementById("StoragePassword").value
+            }
+
+           window.localStorage.setItem("logindata",JSON.stringify(Obj));
+       
+        }
+
+    function read() {
+        str = window.localStorage.getItem("logindata");
+        obj1 = JSON.parse(str);
+        console.log(obj1)
+
+    }
+    function remove() {
+        window.localStorage.removeItem("logindata");
+    }
+</script>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+
+    <title>Home Pages</title>
+    <style>
+        body{
+            margin: 0px;
+            background-color: wheat;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+     .banking-grid{    
+    grid-template-areas: 
+        'header'
+        'main'
+        'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+header{
+    background-color:  lightblue;
+
+    }
+        
+        
+        nav{
+            
+            background-color: green;
+            padding: 1rem;
+            text-align: center;
+            
+        }
+        a{
+            color: whitesmoke;
+            text-decoration: none;
+            font-size: 1.25rem;
+            margin: 15px;
+            padding: 10px;
+        }
+
+        a:hover{
+            
+            background-color: whitesmoke;
+            color: black;
+            border-radius: 20px;
+            border: 1.5px solid  orange;
+        }
+        main{
+            background-color: cadetblue;
+            text-align: center;
+            margin-top: -1rem;
+        }
+        footer{
+            background-color: orange;
+            text-align: center;
+        }
+        
+
+.fa:hover {
+    
+    color: black;
+    border-radius: 20px;
+    border: dashed red;
+}
+    img{
+        height: 6rem;
+        
+    }
+   
+.java{
+    background-color: red;
+    margin-right: 60rem;
+  
+}
+.Spring{
+    background-color: rgb(18, 220, 132);
+    margin-left: 65rem;
+    margin-right: 5px;
+
+}
+.SpringBoot{
+    background-color: rgb(53, 55, 171);
+    margin-right: 25rem;
+    margin-left: 40rem;
+
+
+}
+.Python{
+    background-color: rgb(125, 13, 64);
+    margin-right: 42rem;
+    margin-left: 25rem;
+    margin-top: -5rem;
+
+}
+
+
+
+    </style>
+</head>
+<body>
+           <section class="banking-grid">  
+            <header>
+                <img src="LOGO.png" />
+                <a href="#" class="fa fa-facebook"></a>  
+                <a href="#" class="fa fa-twitter"></a>  
+                <a href="#" class="fa fa-pinterest"></a>  
+                <a href="#" class="fa fa-linkedin"></a>  
+                <a href="#" class="fa fa-instagram"></a>
+            </header>
+                    <nav>
+                        
+                            <a href="#">HOME</a>
+                            <a href="#">PORTFOLIO</a>
+                            <a href="#">CONTACT</a>
+                            <a href="#">ABOUT</a>
+                            <a href="#">LOGOUT</a>
+                    </nav>
+                    
+                            <main>
+                                <p>this is Main</p>
+                                <img src="LOGO.png">
+                                <div class="java">
+                                    <p>this is java DIV</p>
+                                </div>
+                                <div class="Spring">
+                                    <p>this is Spring</p>
+                                </div>
+                                <div class="Python">
+                                    <p>this is  Python DIV</p>
+                                </div>
+                                <div class="SpringBoot">
+                                    <p>this is  SpringBoot DIV</p>
+                                </div>
+
+                            </main>
+                                <footer>
+                                    CopyRight @2024
+                                </footer>
+
+
+           </section>
+</body>
+</html>

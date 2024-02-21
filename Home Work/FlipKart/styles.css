@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    height: 100;
+}
+html{
+    box-sizing: border-box;
+}
+
+.banking-grid{
+    display: grid;
+    grid-template-areas: 
+        'header'
+        'main'
+        'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+    height: 100vh;
+    
+}
+header{
+    grid-area: 'header';
+    background-color: yellow;
+    color: black;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    
+}
+main{
+    background-color: red;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    
+}
+
+footer{
+    background-color: aqua;
+    text-align: center;
+    align-items: center;
+}
+img{
+    border: 5px solid green;
+    border-radius: 40%;
+    margin-top: 5px;
+}
+.userlogo{
+    width: 28px;
+    height: 28px;
+    margin-left: 45rem;
+}
+.looplogo{
+    width: 60px;
+    height: 60px;
+}
+section{
+    justify-content: center;
+    
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: darkgray;
+    padding: 10px;
+    border: 1px solid yellow;
+    border-radius: 28px;
+    margin-right: 70rem;
+    margin-left: 1rem;
+    text-align: center;
+    
+}
+a:hover{
+    border: 1px solid blue;
+}
+.LIST1{
+    float: right;
+}
+
+
+
+
+
+
+
