@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+</head>
+<body>
+    <article id="my_location"></article>
+    <br><br>
+    <button onclick="clickMe()">Show Me Location</button>
+    <script>
+        function clickMe(){
+            console.log("click Me");
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function success(position){
+                  document.getElementById("my_location").innerHTML = 
+                  position.coords.latitude+"........"+position.coords.longitude;
+                },function error(err){
+                    switch(err.code){
+                       case err.PERMISSION_DENIED:
+                       document.getElementById("my_location").innerHTML = "Permission Denied";
+                       break;
+                       case err.POSITION_UNAVAILABLE:
+                       document.getElementById("my_location").innerHTML = "POSITION UNAVAILABLE";
+                        break;
+                        case err.TIMEOUT:
+                        document.getElementById("my_location").innerHTML = "Time Out";
+                            break;
+                            case err.UNKNOWN_ERROR:
+                            document.getElementById("my_location").innerHTML = "Internal ERROR";
+                            break;
+                    }
+                    
+                });
+
+            }
+            else{
+                document.getElementById("my_location").innerHTML="<b>Google Map Not your Browers</b>"
+            }
+        }
+    </script>
+</body>
+</html>
