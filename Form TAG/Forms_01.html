@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Tag</title>
+    <style>
+        body{
+            background-color: rgba(133, 123, 133, 0.1);
+            font-size: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-left: 30px;
+        }
+        input{
+            padding: 5px;
+            background-color: whitesmoke;
+            text-align:center;
+            font-size: 15px;
+            border-top-right-radius: 18px;
+            border-bottom-left-radius: 18px;
+
+
+            
+        }
+        label{
+            font-size: 15px;
+            
+        }
+        option{
+            font-size: 20px;
+        }
+legend{
+    background-color: black;
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 10px;
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    text-align: center;
+    border: 3px solid orange;
+
+}
+fieldset{
+    width: 30%;
+    margin: auto;
+    border-radius: 15px;
+    border: black solid 2px;
+    background: linear-gradient(65deg,white,orange);
+}
+a{
+    color: whitesmoke;
+}
+button{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    width: 45%;
+    border-color: whitesmoke 5px ;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: honeydew;
+    color:  black;
+}
+select{
+    padding:  10px;
+}
+
+
+    </style>
+</head>
+<fieldset >
+    
+        <legend>Registration Form </legend>
+    <form action="/alam" method="post">
+          <p>
+            <label for="nama">Title : </label>
+            <label>
+                <input type="radio" name="title" value="mr">
+                Mr.
+            </label>
+
+            <label>
+                <input type="radio" name="title" value="mrs">
+                Mrs.
+            </label>
+
+            <label>
+                <input type="radio" name="title" value="miss">
+                Miss.
+            </label>
+            </p>
+
+            <p>
+            <label>First Name :</label><br>
+            <input type="text"  id="fname" name="fname">
+            </p>
+            <p>
+            <label>Middle Name :</label><br>
+            <input type="text" id="mname" name="mname">
+            </p>
+            <p>
+            <label>Last Name :</label><br>
+            <input type="text" id="lname" name="lname">
+            </p>
+            <p>
+            <label>Email :</label><br>
+            <input type="email" id="mail" name="mail">
+            </p>
+
+            <p>
+            <label>Password :</label><br>
+            <input type="password" id="pass" name="pass">
+            </p>
+
+            <p>
+            <label>Phone No :</label><br>
+            <input type="tel" id="phone" name="phone">
+            </p>
+
+            <p>
+            <label>Coures :</label><br>
+            <select >
+                <option selected disabled hidden style='display: none'>Select Course</option>
+                <option>Java FullStack</option>
+                <option>UI FullStack</option>
+                <option>Net FullStack</option>
+                <option>DataSecience FullStack</option>
+                <option>AWS</option>
+            </select>
+          </p>
+
+          <p>
+            <labe>
+                <input type="checkbox" id="terms" name="terms">
+                I Agree Terms & Condition
+                </label>
+          </p>
+          <button>Signup</button>
+          <button>Reset From</button>
+
+    </form>
+    </fieldset>
+</body>
+</html>
