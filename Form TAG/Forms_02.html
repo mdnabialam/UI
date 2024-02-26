@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms 02</title>
+    <style>
+        #my-rang{
+            background-color: aquamarine;
+            color: red;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/alam" method="post">
+        <label>CTC : </label><br>
+        <input type="range" min="0" max="100" step="1" value="30" id="my-rang">
+    <br><br>
+    <label>Color Select :</label>
+    <input type="color" value="my-rang">
+    <br><br>
+    <label>Select Date </label>
+    <input type="date" value="YYYY-MM-DD" min="1950-01-01" max="2040-12-31"><br><br>
+    <br><br>
+    <label>Date and Time </label>
+    <input type="datetime-local">
+    <label>File</label><br><br>
+    <input type="file"  accept=".jpg,.png,.pdf,.txt"><br><br>
+    <label>Suach Box</label>
+    <input type="search"><br>
+    <label>URL</label><br>
+    <input type="url" placeholder="https://alam.com" size="30">
+</form>
+</body>
+</html>
