@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { margin: 0; padding: 0;}
+        body{
+            margin: 0;
+            background-color: rgb(223, 209, 193);
+            font-size: 20px;
+        }
+        .mainDiv>div{
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            border: 1px solid red;
+        }
+        .mainDiv{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+            justify-items: center;
+        }
+        img{
+            width: 50px;
+            border-radius: 50%;
+            border: 1px solid red;
+            margin-top: 20px;
+        }
+        img:hover{
+            width: 75px;
+            border-radius: 50%;
+            border: 2px solid green;
+            cursor:pointer;
+
+        }
+        .mainDiv>div:nth-child(5){
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="mainDiv">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div>
+            <img src="Black.jpg">
+            <img src="Black.jpg">
+            <img src="Black.jpg">
+            <img src="Black.jpg">
+            <img src="Black.jpg">
+            <img src="Black.jpg">
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
