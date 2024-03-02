@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    background: linear-gradient(95deg,rgb(134, 8, 8),rgb(178, 219, 229));
+    color: yellow;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav{
+    background-color: aquamarine;
+}
+ul{
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
