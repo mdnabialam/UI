@@ -1,0 +1,39 @@
+<script>
+    let fun1=() =>{
+        return "NABI";
+    }
+    console.log(fun1());
+
+
+
+    let fun2=()=>console.log("MD NABI ALAM");
+    fun2();
+
+    let fun_All = (arg1,arg2,arg3)=>{
+        console.log(arg1(),arg2(),arg3());
+    };
+    fun_All( ()=>{
+        return "MD";
+    } ,()=>{
+        return "NABI";
+    },()=>{
+        return "ALAM";
+    });
+
+
+    let NewFun = (user,Hr,Comapny)=>{
+        console.log(user(),Hr(),Comapny());
+    };
+    let user = ()=>{
+        return "MD ZOHAN";
+    }
+    let Hr = ()=>{
+        return "hr@gmail.com";
+    }
+    let Comapny = ()=>{
+        return "COlUD NETWORK TECNO";
+    }
+    NewFun(user,Hr,Comapny);
+
+
+</script>
