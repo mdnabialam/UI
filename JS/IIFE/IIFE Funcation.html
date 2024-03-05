@@ -1,0 +1,47 @@
+<script>
+    (()=>{
+        console.log("welcome to IIEF");
+    })();
+
+
+let a= (()=>{
+    return "MD NABI ALAM";
+})();
+console.log(a);
+
+
+function fun(arg,ar1,agr2){
+    console.log(arg,ar1,agr2);
+    
+};
+
+fun(  (()=>{
+    return "MD"})(),
+    (()=>{
+        return "NEHAL"})(),
+    (()=>{
+        return "MD"})()
+);
+
+
+((a,b,c)=>{
+    console.log(a,b,c);
+})("A","B","C")
+
+for (let index = 1; index < 6; index++) {
+    setTimeout(()=>{
+        console.log(index);
+    },5000)
+}
+
+for(var i=0;i<9;i++){
+    ((i)=>{
+        setTimeout(()=>{
+            console.log(i);
+        },5000)
+    })(i);
+
+
+}
+
+</script>
