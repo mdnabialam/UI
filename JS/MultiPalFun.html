@@ -1,0 +1,24 @@
+<script>
+    function fun1(){
+        return fun2;
+    }
+    function fun2(){
+        return "Function call to function";
+    }
+    console.log(fun1()());
+
+function m1(){
+    return m2;
+}
+function m2(){
+    return m3;
+}
+function m3(){
+    return m4;
+}
+function m4(){
+    return "Function call m1 to m2 to m3 ... function m4";
+}
+console.log(m1()()()());
+
+</script>
