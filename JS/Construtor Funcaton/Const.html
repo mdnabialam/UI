@@ -1,0 +1,67 @@
+<script>
+    function one(){
+        this.One ="MD NABI ALAM";
+        this.Two ="MD NADEEM";
+        this.Three = "MD NEHAL ALAM";
+    }
+    let obj = new one();
+    console.log(obj.One,obj.Two,obj.Three);
+
+    let obj2 = new one();
+    console.log(obj2.One,
+    obj2.Two,
+    obj2.Three);
+
+    function  showName() {
+        this.wish = "JAVA";
+        this.myFun = function(){
+            return  `My favorite language is ${this.wish}`;
+        };
+    };
+    let obj3 = new showName();
+    console.log(obj3.myFun());
+
+
+    
+
+</script>
+<script>
+    function class_One(a,b,c){
+        this.one=a;
+        this.two=b;
+        this.Three=c;
+
+    };
+    let classone= new class_One("AA","BA","CA")
+    console.log(classone.one,classone.two,classone.Three);
+
+    let obj2Class = new class_One("AAA","BBB","CCC");
+    console.log(obj2Class.one,obj2Class.two,obj2Class.Three);
+
+        function sum(){};
+        sum.prototype.One="ONE ONE";
+        let  add=new sum();
+        console.log(add.One);
+
+    function ShowOne(){
+    };
+    ShowOne.prototype.sub="JAVA";
+    ShowOne.prototype.fub= function (){
+        return "SPRINGBOOT"
+    };
+    let obj4=new ShowOne();
+    console.log(obj4.sub,obj4.fub());
+
+
+function classOne(){};
+    classOne.prototype.varone="HHHHHH";
+function classTwo(){};
+classTwo.prototype = Object.create(classOne.prototype) ;
+classTwo.prototype.vartwo="GGGGGG";
+
+let objH = new classTwo();
+console.log(objH.varone,objH.vartwo);
+
+
+</script>
+
