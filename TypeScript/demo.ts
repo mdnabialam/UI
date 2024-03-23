@@ -13,3 +13,4 @@ function fun(a:string,op:any="nabi",op1?:any,...op2:any[]):any{
 }
 fun("NABI");
 fun("NABI",undefined,undefined,undefined,undefined);
+

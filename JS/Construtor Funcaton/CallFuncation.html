@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!---->
+<body>
+    <script>
+        function fun1(arg1){
+            return arg1(fun3);
+        };
+        function fun2(arg2){
+            return arg2("Ramadan");
+        };
+        function fun3(arg3){
+            console.log(arg3);
+        };
+        fun1(fun2);
+
+        </script>
+
+        <script>
+            function cal(num,add){
+                return add(num+5,false);
+            }
+            function addition(addRes,error){
+                if(!error){
+                    console.log(addRes);
+                }
+            }
+            cal(5,addition);
+        </script>
+</body>
+</html>
