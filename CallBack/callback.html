@@ -1,3 +1,5 @@
+
+
 <script>
     function fun1(arg1){
         console.log(arg1());
@@ -7,4 +9,54 @@
         return "MD NABI ALAM";
     }
     fun1(fun2);
+
+    function fun3(arg1,arg2,agr3){
+        console.log( arg1(), arg2(), agr3() );
+    }
+
+    
+    function fun4(){
+        return "MD";
+    }
+    function fun5(){
+        return "Zohan";
+    }
+    function fun6(){
+        return "Siddique";
+    }
+
+    fun3(fun4,fun5,fun6);
+
+
+    function funOne(ar1,ar2,ar3){
+        console.log(ar1(), ar2(), ar3()) ;
+    }
+
+    function funtwo(){
+        return "MY IS";
+    }
+
+    function funthree(){
+        return "MD ZOHAN";
+    }
+    function funall(){
+        return "SIDDIQUE";
+    }
+
+    funOne(funtwo,funthree,funall);
+
+
+    function nameLess(resp,err){
+        return resp("ok")+"......."+err("Bye");
+    }
+
+    nameLess( (par1)=>{
+        console.log(par1);
+    }, ( par2)=>{
+        console.log(par2);
+    });
+
+
+
+
 </script>
