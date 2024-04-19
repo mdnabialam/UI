@@ -1,0 +1,16 @@
+<script>
+    let calc=(num,add)=>{
+        return add(num+5,false);
+    }
+
+    calc(5,(addRes,error)=>{
+    /* if(error == false){
+            console.log(addRes);
+        }*/
+
+        if(!error){
+            console.log(addRes);
+        }
+    })
+
+</script>
