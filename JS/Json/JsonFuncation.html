@@ -1,0 +1,21 @@
+<script>
+    let obj={
+        "Oracle":oracle,
+        "MySQL":mysql,
+        "MongoDB":mongodb,
+    }
+    function oracle(){
+        return "Oracle connaction soon";
+    }
+    function mysql(){
+        return "MySQL connaction soon";
+    }
+    function mongodb(){
+        return "MongoDB connaction soon";
+    }
+
+    console.log(obj["Oracle"]()); // Oracle connaction soon
+    console.log(obj.Oracle());
+    console.log(obj.MySQL());
+    console.log(obj.MongoDB());
+</script>
